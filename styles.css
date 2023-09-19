@@ -1,0 +1,49 @@
+/* * {
+    border: 1px solid red;
+} */
+
+body {
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+    padding: 48px;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 72px;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 16px;
+}
+
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;    
+    width: 879px;
+    height: 639px;
+    background-color: lightgray;
+}
+
+.grid-box {
+    border: 1px solid darkgray;
+    background-color: lightgray;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for color changes */
+}
+
+.small {
+    flex-basis: calc(4.545% - 2px); /* (100 / 22)% - 2px */
+    height: calc(6.25% - 2px); /* (100 / 16)% - 2px */
+}
+
+.medium {
+    flex-basis: calc(2.272% - 2px); /* (100 / 44)% - 2px */
+    height: calc(3.125% - 2px); /* (100 / 32)% - 2px */
+}
+
+.large {
+    flex-basis: calc(1.136% - 2px); /* (100 / 88)% - 2px */
+    height: calc(1.5625% - 2px); /* (100 / 64)% - 2px */
+}
