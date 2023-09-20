@@ -6,7 +6,14 @@ body {
     display: flex;
     justify-content:  center;
     align-items: center;
-    padding: 48px;
+    background-color: turquoise;
+}
+
+.sketch-pad {
+    background-color: tomato;
+    padding: 12px 0px;
+    margin: 24px 48px;
+    border-radius: 24px;
 }
 
 h1 {
@@ -15,7 +22,23 @@ h1 {
     text-align: center;
     padding: 0px;
     margin: 0px;
-    margin-bottom: 16px;
+    color: gold;
+    flex: none;
+}
+
+.header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px;
+    margin-bottom: 12px;
+    /* gap: 48px; */
+}
+
+.logo-text {
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    color: gold;
 }
 
 #grid-container {
@@ -25,6 +48,7 @@ h1 {
     width: 879px;
     height: 639px;
     background-color: lightgray;
+    margin: 0px 96px;
 }
 
 .grid-box {
@@ -33,7 +57,7 @@ h1 {
     transition: background-color 0.3s, border-color 0.3s; /* Smooth transition for color changes */
 }
 
-.small {
+.large {
     flex-basis: calc(4.545% - 2px); /* (100 / 22)% - 2px */
     height: calc(6.25% - 2px); /* (100 / 16)% - 2px */
 }
@@ -43,7 +67,59 @@ h1 {
     height: calc(3.125% - 2px); /* (100 / 32)% - 2px */
 }
 
-.large {
+.small {
     flex-basis: calc(1.136% - 2px); /* (100 / 88)% - 2px */
     height: calc(1.5625% - 2px); /* (100 / 64)% - 2px */
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 24px;    
+}
+
+#options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 48px;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    color: gold;
+}
+
+.box-color {
+    color: white;
+    border: 3px solid gold;
+    border-radius: 50%;
+    padding: 8px;
+}
+
+#small-size-square{
+    height: 18px;
+    width: 18px;
+}
+
+#medium-size-square{
+    height: 33px;
+    width: 33px;
+}
+
+#large-size-square {
+    height:48px;
+    width: 48px;
+}
+
+.box-size {
+    background-color: white;
+    transition: border 0.3s, border-radius 0.3s;
+    box-sizing: border-box;
+}
+
+.selected-size {
+    border: 3px solid gold;
+    border-radius: 25%;
 }

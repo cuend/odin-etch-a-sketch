@@ -7,14 +7,30 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    
     <title>Etch-A-Sketch Project</title>
 </head>
 <body>
     <div class="sketch-pad">
-        <h1>Etch A Sketch</h1>
+        <div class="header">
+            <span class="logo-text">MAGIC</span>
+            <h1>Etch A Sketch</h1>
+            <span class="logo-text">SCREEN</span>
+        </div>
         <div id="grid-container"></div>
+        <div class="footer">
+            <div id="options">Select size :
+                <div class="box-size" id="small-size-square"></div>
+                <div class="box-size selected-size" id="medium-size-square"></div>
+                <div class="box-size" id="large-size-square"></div>
+            </div>
+            <button id="erase">Erase</button>
+            <div id="options">Coloring :
+                <div class="box-color">Classic</div>
+                <div>Modern</div>
+            </div>
+        </div>
     </div>
 
      <!-- Javascript -->
