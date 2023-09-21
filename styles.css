@@ -6,6 +6,7 @@ body {
     display: flex;
     justify-content:  center;
     align-items: center;
+    flex-direction: column;
     background-color: turquoise;
 }
 
@@ -38,6 +39,7 @@ h1 {
 .logo-text {
     font-size: 36px;
     font-family: 'Poppins', sans-serif;
+    font-style: italic;
     color: gold;
 }
 
@@ -49,6 +51,7 @@ h1 {
     height: 639px;
     background-color: lightgray;
     margin: 0px 96px;
+    cursor: crosshair;
 }
 
 .grid-box {
@@ -72,12 +75,26 @@ h1 {
     height: calc(1.5625% - 2px); /* (100 / 64)% - 2px */
 }
 
-.footer {
+.controls {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 0px 24px;    
+    gap: 48px;
+    margin: 24px 72px;    
+}
+
+#erase {
+    background-color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    color: tomato;
+    height: 32px;
+    padding: 6px 16px;
+    cursor: pointer;
 }
 
 #options {
@@ -85,17 +102,21 @@ h1 {
     justify-content: center;
     align-items: center;
     gap: 12px;
-    margin: 24px 48px;
     font-size: 24px;
     font-family: 'Poppins', sans-serif;
+    font-style: italic;
     color: gold;
 }
 
 .box-color {
     color: white;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.selected-color {
     border: 3px solid gold;
     border-radius: 50%;
-    padding: 8px;
 }
 
 #small-size-square{
@@ -117,9 +138,24 @@ h1 {
     background-color: white;
     transition: border 0.3s, border-radius 0.3s;
     box-sizing: border-box;
+    cursor: pointer;
 }
 
 .selected-size {
     border: 3px solid gold;
     border-radius: 25%;
+}
+
+.footer {
+    border-radius: 12px;
+    background-color: tomato;
+    color: gold;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 6px 16px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }

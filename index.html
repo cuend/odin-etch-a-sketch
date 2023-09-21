@@ -7,7 +7,7 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
     
     <title>Etch-A-Sketch Project</title>
 </head>
@@ -19,20 +19,22 @@
             <span class="logo-text">SCREEN</span>
         </div>
         <div id="grid-container"></div>
-        <div class="footer">
+        <div class="controls">
             <div id="options">Select size :
                 <div class="box-size" id="small-size-square"></div>
                 <div class="box-size selected-size" id="medium-size-square"></div>
                 <div class="box-size" id="large-size-square"></div>
             </div>
-            <button id="erase">Erase</button>
             <div id="options">Coloring :
-                <div class="box-color">Classic</div>
-                <div>Modern</div>
+                <div id="classic" class="box-color selected-color">Classic</div>
+                <div id="modern" class="box-color">Modern</div>
             </div>
+            <div id="erase">Erase</div>
         </div>
     </div>
-
+    <div class="footer">
+        Built by <a href="https://github.com/daev-c" target="_blank">David Cuen</a> | <a href="https://github.com/daev-c/odin-etch-a-sketch" target="_blank">Source</a>
+    </div>
      <!-- Javascript -->
      <script src="script.js"></script>
 </body>
